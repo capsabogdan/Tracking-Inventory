@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inventory Tracking </title>
+    <link rel="stylesheet" type="text/css" href="./css/welcome.css">
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+            font-family: consolas;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            color: #160652;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            background: white;
+
+
+        }
+
+        a {
+            font-family: "Inv Eina 03", "Eina 03", -apple-system, BlinkMacSystemFont, "Open Sans", open-sans, sans-serif;
+            position: relative;
+            display: inline-block;
+            padding: 25px 30px;
+            margin: 40px 0;
+            color: rgb(22, 6, 82);
+            font-size: 24px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 0.5s;
+            letter-spacing: 4px;
+        }
+
+        a:nth-child(1) {
+            filter: hue-rotate(290deg);
+
+        }
+
+        a:nth-child(2) {
+            filter: hue-rotate(110deg);
+        }
+
+        a:hover {
+
+            color: white;
+            background: #060311;
+            box-shadow: 0 0 5px #060311, 0 0 10px #060311;
+
+            transition-delay: 1s;
+        }
+
+        a span {
+            position: absolute;
+            display: block;
+        }
+
+        a span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgb(0, 0, 0));
+            animation: animate1 1s linear infinite;
+        }
+
+        @keyframes animate1 {
+
+            0% {
+                left: -100%;
+            }
+
+            50%,
+            100% {
+                left: 100%;
+            }
+
+        }
+
+        a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #060311);
+            animation: animate2 1s linear infinite;
+            animation-delay: 0.25s;
+        }
+
+        @keyframes animate2 {
+
+            0% {
+                top: -100%;
+            }
+
+            50%,
+            100% {
+                top: 100%;
+            }
+
+        }
+
+        a span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #060311);
+            animation: animate3 1s linear infinite;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes animate3 {
+
+            0% {
+                right: -100%;
+            }
+
+            50%,
+            100% {
+                right: 100%;
+            }
+
+        }
+
+        a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, rgb(0, 0, 0));
+            animation: animate4 1s linear infinite;
+            animation-delay: 0.75s;
+        }
+
+        @keyframes animate4 {
+
+            0% {
+                bottom: -100%;
+            }
+
+            50%,
+            100% {
+                bottom: 100%;
+            }
+
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+            color: #060311;
+            font-size: 24px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+
+        }
+
+        footer {
+            height: 20px;
+            width: 55%;
+            position: fixed;
+            bottom: 50px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            color: #060311;
+            font: normal 15px verdana, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to ...</h1>
+<a href="./index.html">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    The Web Development Project
+</a>
+<footer>
+    <small> &copy; Copyright 2020 Alsamkari T., Capsa B., Oiste A. </small>
+</footer>
+</body>
+</html>

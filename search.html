@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="libraries/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="libraries/js/popper.min.js"></script>
+    <link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <script src="./libraries/js/fontawesome.js"></script>
+    <script src="libraries/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <style>
+        th {
+            background-color: rgb(66, 66, 66) !important;
+            color: rgb(255, 255, 255);
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 20px;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: .5rem;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 19px;
+
+        }
+
+        .navbar-dark {
+            font-family: 'Yanone Kaffeesatz', sans-serif !important;
+            font-size: 18px;
+        }
+
+        .pageSubtitle {
+            font-family: 'Yanone Kaffeesatz', sans-serif !important;
+            font-size: 30px !important;
+            text-align: center !important;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+
+        </div>
+        <div class="col-md-12 col-12 text-center ">
+            <h2 class="my-md-3 site-title text-center">Tracking Inventory</h2>
+        </div>
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="add.html">ITEMS</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link active" href="search.html">SEARCH</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="reports.html">REPORTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">TEAM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container mt-3">
+    <p class="pageSubtitle">Search for items</p>
+</div>
+<div class="container">
+    <label for="tableSearch">Item name</label>
+    <input class="form-control mb-4" id="tableSearch" type="text" placeholder="Search items by name">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Serial nb.</th>
+            <th>Value</th>
+            <th>Quantity</th>
+            <th>Image</th>
+        </tr>
+        </thead>
+        <tbody id="myTable">
+        </tbody>
+    </table>
+</div>
+<script src="js/search.js"></script>
+</body>
+</html>

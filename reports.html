@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="libraries/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="libraries/js/popper.min.js"></script>
+    <link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+    <script src="libraries/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <script src="./libraries/js/fontawesome.js"></script>
+    <script src="libraries/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Reports</title>
+    <style>
+        th {
+            background-color: rgb(66, 66, 66) !important;
+            color: rgb(255, 255, 255);
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 20px;
+        }
+
+        .navbar-dark {
+            font-family: 'Yanone Kaffeesatz', sans-serif !important;
+            font-size: 18px;
+        }
+
+        .pageSubtitle {
+            font-family: 'Yanone Kaffeesatz', sans-serif !important;
+            font-size: 30px !important;
+            text-align: center !important;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: .5rem;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 19px;
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+
+        </div>
+        <div class="col-md-12 col-12 text-center ">
+            <h2 class="my-md-3 site-title text-center">Tracking Inventory</h2>
+        </div>
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="add.html">ITEMS</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="search.html">SEARCH</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link active" href="reports.html">REPORTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">TEAM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container mt-3">
+    <p class="pageSubtitle">Report of the items in your inventory</p>
+</div>
+<div class="container">
+    <div class="feedback"></div>
+    <div class="alert alert-secondary list-inline">
+        <p class="list-inline-item">You have
+            <mark id="itemsCount">0</mark>
+            item(s) in your inventory
+        </p>
+        <p class="list-inline-item">with a total value of
+            <mark id="itemsTotal">0</mark>
+        </p>
+        <p class="list-inline-item">and an average value of
+            <mark id="itemsAverage">0</mark>
+            .
+        </p>
+    </div>
+    <section>
+        <table class=" table table-hover" id="inventoryTable">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Serial nb.</th>
+                <th>Value</th>
+                <th>Quantity</th>
+                <th>Image</th>
+                <th>Total value</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody id="inventoryTableBody">
+            </tbody>
+        </table>
+
+    </section>
+</div>
+<section>
+    <div class="col text-center">
+        <button class="btn btn-outline-secondary" onclick="exportExcel()">Export Data to
+            Excel
+        </button>
+        <button class="btn btn-outline-secondary" onclick="deleteAllItems()">Delete All
+            Items
+        </button>
+    </div>
+</section>
+<script src="js/reports.js"></script>
+<script src="js/add.js"></script>
+</body>
+</html>

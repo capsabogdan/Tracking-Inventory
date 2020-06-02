@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="libraries/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="libraries/js/popper.min.js"></script>
+    <link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+    <script src="libraries/js/bootstrap.min.js"></script>
+    <script src="libraries/js/webcam-easy.min.js"></script>
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Fonts-->
+    <link rel="stylesheet" href="./css/fonts.css">
+    <script src="./libraries/js/fontawesome.js"></script>
+    <meta charset="UTF-8">
+    <title>Add</title>
+    <style>
+        .navbar-dark {
+            font-family: 'Yanone Kaffeesatz', sans-serif !important;
+            font-size: 18px;
+        }
+
+        .pageSubtitle {
+            font-family: 'Yanone Kaffeesatz', sans-serif !important;
+            font-size: 30px !important;
+            text-align: center !important;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+
+        </div>
+        <div class="col-md-12 col-12 text-center ">
+            <h2 class="my-md-3 site-title text-center">Tracking Inventory</h2>
+        </div>
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">HOME</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link active " href="add.html">ITEMS</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="search.html">SEARCH</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="reports.html">REPORTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">TEAM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container mt-3 ">
+    <div class="col-md-4 offset-md-4">
+        <p class="pageSubtitle">Add a new item</p>
+        <div class="feedback"></div>
+        <form class="ml-5" id="addItemForm">
+            <div class="form-group">
+                <label for="name">Name* :
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="serialNb">Serial number* :
+                    <input type="text" id="serialNb" name="serialNb" class="form-control" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="value">Value* :
+                    <input type="number" id="value" name="value" min="0" step="any" class="form-control" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="value">Quantity* :
+                    <input type="number" id="quantity" name="quantity" min="0" step="any" class="form-control"
+                           required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="value">Item image URL :
+                    <input type="text" id="url" name="url" class="form-control">
+                </label>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-dark" type="submit">Add item</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="js/add.js"></script>
+</body>
+</html>

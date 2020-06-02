@@ -1,0 +1,217 @@
+.team-section {
+    overflow: hidden;
+    text-align: center;
+    padding: 0;
+    background: linear-gradient(to right, #212529, #212529);
+}
+
+.team-section h1 {
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    font-size: 40px;
+    color: white;
+}
+
+.border {
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: #060311;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.border2 {
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+
+.ps {
+    margin-bottom: 40px;
+}
+
+.ps a {
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.ps a img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+
+.ps a:hover > img {
+    filter: none;
+
+}
+
+.section {
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+
+.section:target {
+    height: auto;
+}
+
+.name {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.OurTeam {
+    position: relative;
+    padding-bottom: 2px;
+    padding-top: 20px;
+    background-color: black;
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, black, rgb(146, 146, 146), rgb(156, 156, 156));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    font-family: 'Yanone Kaffeesatz', sans-serif !important;
+
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+#social-media {
+    background-color: white;
+    padding: 50px 0;
+    margin: 100px 0;
+
+
+}
+
+#social-media p {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.title-media::before {
+    content: '';
+    background: rgb(12, 23, 70);
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+.title-media::after {
+    content: '';
+    background: rgb(12, 23, 70);
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(8px);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.middle {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    top: 100%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.btn1 {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #8f8f8f;
+    color: #8f8f8f;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.btn1 i {
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+
+.btn1:hover i {
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.btn1::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #8f8f8f;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn1:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
